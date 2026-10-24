@@ -56,18 +56,18 @@ button_ax = plt.axes([4, 0.3, 0.4, 0.06])
 
 button_button = Button( button_ax, ' Click for the newer, even cooler graph!', color = 'darkred', hovercolor='powderblue')
 
-button_button.on_clicked(on_loremipsum_click)
+button_button.on_clicked(on_foobar_click)
 
 
-def on_loremipsum_click(event): 
+def on_foobar_click(event): 
    ax.cla()
-    print("Oh yeah! You're changing the graph!")
-    ax.set_title("Yeah! Extra New, cooler, different food graph!")
-    candy_options=["Red Doritos", "Blue Doritos","Other"] 
-    votes=[6,4,10,]
-    colors=["#BA0C2F","#004B87","#4A154B",]
-    bars=ax.bar(candy_options,votes,color=colors,edgecolor="black", width=0.6)
-    fig.canvas.draw()
+   print("Oh yeah! You're changing the graph!")
+   ax.set_title("Yeah! Extra New, cooler, different food graph!")
+   candy_options=["Red Doritos", "Blue Doritos","Other"] 
+   votes=[6,4,10,]
+   colors=["#BA0C2F","#004B87","#4A154B",]
+   bars=ax.bar(candy_options,votes,color=colors,edgecolor="black", width=0.6)
+   fig.canvas.draw()
     
 
 
