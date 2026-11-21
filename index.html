@@ -1,52 +1,55 @@
-<button id="kaboom"> I want a survey!👻</button>
+<head>
+    <title>
+        Graphingfavoritecandies.org.gov.web
+    </title>
+</head>
 
-<div class="icecream">
-    <div class="icecream">Yay! Survey!</div>
-    <div class="icecream">Woo!</div>
-</div>
+<body>
+    <button id="kaboom"> I want a survey!👻</button>
 
-<button>👻</button>
-<style>
-    .icecream{
-        color:aqua;
-        width: 100px;
-        height: 100px;
-        background-color:azure;
-        padding: 10px;
-    }
-</style>
+    <style>
+        .graph{
+            width: 100px;
+            height: 100px;
+            background-color:#7ACFF3;
+            padding: 10px;
+        }
+    </style>
 
+    <div class="graph">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        
+    </div>
 
-<style>
-    .graph{
-        width: 100px;
-        height: 100px;
-        background-color:#7ACFF3;
-        padding: 10px;
-    }
-</style>
+    <form id="gobble gobble gobble">
+        <h1>Num num! What's your favorite?</h1>
+        <label for="kitkat">Rocking Red Kitkats?</label>
+        <input type="radio"id=kitkat name="candy-votes"> 
+        <br>
+        <label for="hershey's">The Famous Hershey's?</label>
+        <input type="radio"id=hershey name="candy-votes">
+        <br>
+        <label for="M&M's">Melt-In-Your-Mouth M&M's?</label>
+        <input type="radio"id=hershey name="candy-votes">
+        <br>
+        <label for="snicker's">Sweet,salty, Snicker's?</label>
+        <input type="radio"id=snickers name="candy-votes">
+        <br>
+        <label for="reeses">Peanut buttery Reeses?</label>
+        <input type="radio"id=thebutton name="candy-votes">
 
-<form>
-    <h1>Num num! What's your favorite?</h1>
-    <label for="kitkat">Rocking Red Kitkats?</label>
-    <input type="radio"id=kitkat>
-    <br>
-     <label for="hershey's">The Famous Hershey's?</label>
-    <input type="radio"id=hershey>
-    <br>
-     <label for="M&M's">Melt-In-Your-Mouth M&M's?</label>
-    <input type="radio"id=M&Ms>
-    <br>
-     <label for="snicker's">Sweet,salty, Snicker's?</label>
-    <input type="radio"id=snickers>
-    <br>
-     <label for="reeses">Peanut buttery Reeses?</label>
-    <input type="radio"id=thebutton>
-</form>
-
+        <button type="submit">👻SUBMIT NOW</button>
+</form> 
+</body>
 <script>
+const gobgob = document.getElementById("gobble gobble gobble")
+gobgob.style.visibility="hidden";
 const kaboomkaboom = document.getElementById("kaboom")
 kaboomkaboom.onclick = function() {
+
+    gobgob.style.visibility= "visible";
     alert("GAAAAAHHH!!!!");
 };
 
